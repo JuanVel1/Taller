@@ -1,0 +1,82 @@
+
+{
+  "serie":"Raised by wolves",
+  "num_seasons":2,
+  "original_languaje":"English",
+  "features_seasons":
+    [{
+      "season_number": 1,
+      "season_name": "Temporada 1",
+      "premier_date": "10-09-2020",
+      "cast": [
+        "Amanda Collin", "Abubakar Salim","Winta McGrath","Niamh Algar","Travis Fimmel","Jordan Loughran","Felix Jamieson","Ethan Hazzard","Aasiya Shah","Ivy Wong","Matias Varela"
+        ],
+      "episodes": [{
+        "episode_name": "Raised by Wolves",
+        "time_duration": 53
+      },{
+        "episode_name": "Pentagram",
+        "time_duration": 41
+      },{
+        "episode_name": "Virtual Faith",
+        "time_duration": 48
+      },{
+        "episode_name": "Nature's Course",
+        "time_duration": 46
+      },{
+        "episode_name": "Infected Memory",
+        "time_duration": 54
+      },{
+        "episode_name": "Lost Paradise",
+        "time_duration": 55
+      },{
+        "episode_name": "Faces",
+        "time_duration": 49
+      },{
+        "episode_name": "Mass",
+        "time_duration": 49
+      },{
+        "episode_name": "Umbilical",
+        "time_duration": 44
+      },{
+        "episode_name": "The Beginning",
+        "time_duration": 50
+      }
+    ]},
+    {
+      "season_number": 2,
+      "season_name": "Temporada 2",
+      "premier_date": "03-02-2022",
+      "cast": [
+        "Amanda Collin", "Abubakar Salim","Winta McGrath","Niamh Algar","Travis Fimmel","Jordan Loughran","Felix Jamieson","Ethan Hazzard","Aasiya Shah","Ivy Wong","Matias Varela"
+      ],
+      "episodes": [
+        {
+        "episode_name": "The Collective",
+        "time_duration": 49
+      },{
+        "episode_name": "Seven",
+        "time_duration": 44
+      },{
+        "episode_name": "Good Creatures",
+        "time_duration": 54
+      },{
+        "episode_name": "Control",
+        "time_duration": 43
+      },{
+        "episode_name": "King",
+        "time_duration": 56
+      },{
+        "episode_name": "The Tree",
+        "time_duration": 54
+      },{
+        "episode_name": "Feeding",
+        "time_duration": 47
+      },{
+        "episode_name": "Happyness",
+        "time_duration": 46
+      }
+      ]
+    }
+  ]
+}
