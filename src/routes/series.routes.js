@@ -27,6 +27,53 @@ serieRoutes.get('/', async (req, res) => {
   }
 });
 
+
+serieRoutes.get('/:actorName', async (req, res)=>{
+  try {
+    const { actorName } = req.params;
+    const data = await service.listSeries()
+    // variable para guardar todas las series que encuentre
+    const series = []
+
+    data.forEach(async serie => {
+      //se accede al arreglo de cast que esta en features_seasons
+      const actores =serie.features_seasons[0][0].cast
+
+      //se filtra y se agregan al arreglo series
+      await actores.forEach( actor => {
+        if (actor.toLowerCase() == actorName.toLowerCase()) {
+          series.push(serie)
+        }
+       })
+    });
+    res.status(200).json({ series })
+  } catch (error) {
+    res.status(204).json({ message: error });
+  }
+})
+
+
+serieRoutes.get('/date/:premier_date', async (req, res)=>{
+  try {
+    const { premier_date } = req.params;
+    const data = await service.listSeries()
+    // variable para guardar todas las series que encuentre
+    const series = []
+
+    data.forEach(async serie => {
+      //se filtra y se agregan al arreglo series
+      //con fecha de estreno de la primer temporada igual
+      const date =serie.features_seasons[0][0].premier_date
+      if (date == premier_date) {
+        series.push(serie)
+      }
+    });
+    res.status(200).json({ series })
+  } catch (error) {
+    res.status(204).json({ message: error });
+  }
+})
+
 serieRoutes.put('/:serieId', async (req, res) => {
   try {
     const { serieId } = req.params;

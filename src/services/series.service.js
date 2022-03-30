@@ -14,7 +14,7 @@ class SeriesService{
   async showSerie(serieId) {
     return serieSchema.findById({ _id: serieId });
   }
-
+  
   async editSerie(
     serieId,
     serie,

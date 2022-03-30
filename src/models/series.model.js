@@ -29,12 +29,7 @@ const serieSchema = mongoose.Schema({
     },
     cast:{
       type:Array,
-      require:true
-      // ,
-      // season_name:{
-      //   type:String,
-      //   require:true
-      // }
+      require:true,
     },
     episodes:{
       type:Array,
